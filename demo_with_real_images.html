@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 图片生成 MCP Server 演示 - 真实图片</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .hero.banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+        }
+        .hero.banner img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        .hero.banner h1 {
+            font-size: 3em;
+            margin: 0 0 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .hero.banner p {
+            font-size: 1.2em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            padding: 40px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .image-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        .image-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .image-card h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .image-card p {
+            color: #666;
+            margin: 0;
+        }
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-section {
+            background: #f8f9fa;
+            padding: 40px;
+            margin: 20px 0;
+        }
+        .article-section h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #555;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero banner">
+            <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/1950c84b-150e-461f-835a-23d54231a95c_0.png"/>
+            <h1>Welcome to Our Amazing Product</h1>
+            <p>Discover the future of technology</p>
+        </header>
+        
+        <section>
+            <h2>AI 图片生成 MCP Server 演示</h2>
+            <div class="status">
+                <strong>✅ 成功状态：</strong> 以下显示的是真实的 AI 生成图片，由 FLUX 模型根据内容自动生成。
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/f06fb6da-ef08-4b1a-b3a6-d9cabda7cf7e_0.png" alt="featured product showcase"/>
+                    <h3>产品展示</h3>
+                    <p>AI 生成的产品展示图片</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/03b8d7fe-e3e8-4ea4-84ef-31ba10de0a9b_0.png" alt="user profile avatar"/>
+                    <h3>用户头像</h3>
+                    <p>卡通风格的用户头像</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/10523862-e2ff-45a8-8e25-2c0f98d85706_0.png" alt="company team photo"/>
+                    <h3>团队照片</h3>
+                    <p>专业的团队形象照片</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="article-section">
+            <h2>文章图片生成演示</h2>
+            <div class="article-content">
+                <p>人工智能技术正在快速发展，深度学习算法在各个领域都取得了突破性进展。从计算机视觉到自然语言处理，AI技术正在改变我们的生活方式。</p>
+                
+                <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/feae2056-32a9-48c0-949c-c7e06dfe6fc1_0.png" alt="AI 技术发展" />
+                
+                <p>在医疗健康领域，AI辅助诊断系统能够帮助医生更准确地识别疾病。通过分析医学影像，AI可以发现人眼难以察觉的细微病变，大大提高了诊断的准确性和效率。</p>
+                
+                <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/ac80bb67-75bd-4b5a-ae3c-379e7ff60c59_0.png" alt="医疗 AI" />
+                
+                <p>自动驾驶技术也是AI应用的重要领域。通过深度学习和计算机视觉技术，自动驾驶汽车能够实时感知周围环境，做出智能决策。这项技术有望在未来几年内实现商业化应用。</p>
+                
+                <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/9c2a6f3f-5785-4536-91a0-e1e60ea8a6b0_0.png" alt="自动驾驶" />
+                
+                <p>在教育领域，个性化学习系统利用AI技术分析学生的学习行为和知识掌握情况，为每个学生提供定制化的学习方案。这种智能化的教育方式能够显著提高学习效果。</p>
+                
+                <img src="https://modelscope-studios.oss-cn-zhangjiakou.aliyuncs.com/aigc/text-to-image/3a104579-fc6d-4969-b236-563b8c240ed3_0.png" alt="教育 AI" />
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
