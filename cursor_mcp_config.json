@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ai-image-generator": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": "/Users/alexandrali/Desktop/globalsalarytax wiz mcp",
+      "env": {
+        "MODELSCOPE_API_KEY": "e3488d72-53b3-40ac-b78a-4f3264f3c04d",
+        "PYTHONPATH": "/Users/alexandrali/Desktop/globalsalarytax wiz mcp"
+      }
+    }
+  }
+} 
