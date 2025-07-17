@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/alexandrali0506-ai-image-generator-mcp-badge.png)](https://mseep.ai/app/alexandrali0506-ai-image-generator-mcp)
+
 # AI图片生成 MCP 服务器
 
 一个基于Model Context Protocol (MCP)的AI图片生成服务器，使用ModelScope FLUX模型自动生成高质量的网页图片。
